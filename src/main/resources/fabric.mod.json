@@ -3,9 +3,9 @@
 	"id": "misty-foglands-mod",
 	"version": "${version}",
 	"name": "Misty Foglands Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A new eerie dimension after the End.",
 	"authors": [
-		"Me!"
+		"Jacob Hogrefe"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"main": [
 			"com.jacobhogrefe.MistyFoglandsMod"
+		],
+		"client": [
+			"com.jacobhogrefe.MistyFoglandsModClient"
 		],
 		"fabric-datagen": [
 			"com.jacobhogrefe.MistyFoglandsModDataGenerator"
