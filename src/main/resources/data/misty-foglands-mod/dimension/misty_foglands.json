@@ -1,0 +1,21 @@
+{
+  "type": "misty-foglands-mod:misty_foglands",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:gold_block",
+          "height": 1
+        },
+        {
+          "block": "minecraft:diamond_block",
+          "height": 1
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}
