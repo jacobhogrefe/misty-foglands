@@ -10,3 +10,6 @@ This mod adds a new dimension named "Misty Foglands" and is meant to be an endga
 
 ## How to run
 This is a Fabric based 1.18.2 mod, so using the Fabric loader is necessary to ensure this mod works properly. Once the full version is released, I will update this section of the README.md file, in order to provide more clear description of how to play the mod, as well as where to get the JAR file for it.
+
+## For future developers
+You're best resource will be this [playlist](https://www.youtube.com/watch?v=Xts41xvfjfs&list=PLKGarocXCE1ECgBI1_Z_Yr4qMdhjVi3kg&index=1&t=4s) which guides you through setting up the development environment, and adding new things to it. Once the development environment is set up, use `git clone https://github.com/jacobhogrefe/misty-foglands.git` to clone the project, instead of using the Fabric example mod as shown in the tutorial. From there using the other videos will guide you through adding more to the mod.
