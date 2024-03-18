@@ -1,0 +1,43 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.8,
+  "precipitation": "rain",
+  "category": "extreme_hills",
+  "creature_spawn_probability": 0.1,
+  "effects": {
+    "sky_color": 34483,
+    "fog_color": 8621728,
+    "water_color": 1465480,
+    "water_fog_color": 7847631,
+    "grass_color": 1265742,
+    "foliage_color": 929590
+  },
+  "spawners": {
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 1,
+        "minCount": 5,
+        "maxCount": 8
+      }
+    ],
+    "underground_water_creature": [
+      {
+        "type": "minecraft:glow_squid",
+        "weight": 1,
+        "minCount": 3,
+        "maxCount": 4
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:canyon"
+    ],
+    "liquid": [
+      "minecraft:canyon"
+    ]
+  },
+  "features": []
+}

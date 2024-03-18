@@ -2,10 +2,24 @@
   "type": "misty-foglands-mod:misty_foglands",
   "generator": {
     "type": "minecraft:noise",
+    "seed": 1867453945,
     "settings": "misty-foglands-mod:misty_foglands",
     "biome_source": {
-      "type": "minecraft:fixed",
-      "biome": "minecraft:plains"
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "misty-foglands-mod:hills",
+          "parameters": {
+            "continentalness": 0,
+            "depth": 0,
+            "erosion": -0.5,
+            "humidity": 0,
+            "offset": 0,
+            "temperature": 0,
+            "weirdness": 1
+          }
+        }
+      ]
     }
   }
 }
