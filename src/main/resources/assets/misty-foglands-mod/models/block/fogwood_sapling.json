@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "misty-foglands-mod:block/fogwood_sapling"
+  }
+}

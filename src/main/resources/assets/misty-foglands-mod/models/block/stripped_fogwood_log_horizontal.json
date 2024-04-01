@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "misty-foglands-mod:block/stripped_fogwood_log_top",
+    "side": "misty-foglands-mod:block/stripped_fogwood_log"
+  }
+}

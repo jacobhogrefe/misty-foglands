@@ -1,0 +1,37 @@
+package com.jacobhogrefe.world.feature;
+
+import com.jacobhogrefe.MistyFoglandsMod;
+import com.jacobhogrefe.block.ModBlocks;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.registry.RegistryEntry;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
+
+import java.util.List;
+
+public class ModConfiguredFeatures {
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> FOGWOOD_TREE =
+            ConfiguredFeatures.register("fogwood_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.FOGWOOD_LOG),
+                    new LargeOakTrunkPlacer(10, 8, 12),
+                    BlockStateProvider.of(ModBlocks.FOGWOOD_LEAVES),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 1, 3)).build()
+            );
+
+    public static final RegistryEntry<PlacedFeature> FOGWOOD_CHECKED =
+            PlacedFeatures.register("fogwood_checked", FOGWOOD_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.FOGWOOD_SAPLING));
+
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> FOGWOOD_SPAWN =
+            ConfiguredFeatures.register("fogwood_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(FOGWOOD_CHECKED, 0.5f)),
+                            FOGWOOD_CHECKED));
+
+    public static void registerConfiguredFeatures() {
+        MistyFoglandsMod.LOGGER.info("Registering configured features for " + MistyFoglandsMod.MOD_ID);
+    }
+}

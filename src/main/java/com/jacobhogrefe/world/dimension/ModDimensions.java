@@ -25,6 +25,8 @@ public class ModDimensions {
                 .tintColor(37, 150, 190)
                 .lightWithItem(Items.FEATHER)
                 .onlyLightInOverworld()
+                .flatPortal()
+                .forcedSize(3, 3)
                 .registerPortal();
     }
 }

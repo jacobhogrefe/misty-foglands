@@ -1,5 +1,12 @@
 {
   "item.misty-foglands-mod.custom_stick": "Custom Stick",
 
+  "block.misty-foglands-mod.fogwood_leaves": "Fogwood Leaves",
+  "block.misty-foglands-mod.fogwood_log": "Fogwood Log",
+  "block.misty-foglands-mod.fogwood_planks": "Fogwood Planks",
+  "block.misty-foglands-mod.misty_grass": "Misty Grass",
+  "block.misty-foglands-mod.stripped_fogwood_log": "Stripped Fogwood Log",
+  "block.misty-foglands-mod.fogwood_sapling": "Fogwood Sapling",
+
   "itemGroup.misty-foglands-mod.custom_stick": "Misty Foglands"
 }

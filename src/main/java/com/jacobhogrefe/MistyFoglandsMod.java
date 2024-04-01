@@ -1,9 +1,11 @@
 package com.jacobhogrefe;
 
+import com.jacobhogrefe.block.ModBlocks;
 import com.jacobhogrefe.item.ModItems;
 import com.jacobhogrefe.world.dimension.ModDimensions;
+import com.jacobhogrefe.world.feature.ModConfiguredFeatures;
+import com.jacobhogrefe.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +15,11 @@ public class MistyFoglandsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModItems.registerModItems();
 		ModDimensions.register();
+		ModBlocks.registerModBlocks();
+		ModRegistries.registerModStuffs();
+		ModWorldGen.generateModWorldGen();
 	}
 }
