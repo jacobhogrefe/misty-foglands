@@ -2,6 +2,7 @@ package com.jacobhogrefe;
 
 import com.jacobhogrefe.block.ModBlocks;
 import com.jacobhogrefe.item.ModItems;
+import com.jacobhogrefe.util.ModRegistries;
 import com.jacobhogrefe.world.dimension.ModDimensions;
 import com.jacobhogrefe.world.feature.ModConfiguredFeatures;
 import com.jacobhogrefe.world.gen.ModWorldGen;

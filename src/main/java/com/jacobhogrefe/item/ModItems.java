@@ -13,6 +13,8 @@ public class ModItems {
 
     public static final Item CUSTOM_STICK = registerItem("custom_stick",
             new CustomStickItem(new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(1)));
+    public static final Item MISTY_SHARD = registerItem("misty_shard",
+            new Item(new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(64)));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(MistyFoglandsMod.MOD_ID, name), item);
     }

@@ -31,6 +31,14 @@ public class ModConfiguredFeatures {
                     new RandomFeatureConfig(List.of(new RandomFeatureEntry(FOGWOOD_CHECKED, 0.5f)),
                             FOGWOOD_CHECKED));
 
+    public static final List<OreFeatureConfig.Target> OVERWORLD_MIST_ORES = List.of(
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.MIST_ORE.getDefaultState()));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MIST_ORE =
+            ConfiguredFeatures.register("misty_ore",Feature.ORE,
+                    new OreFeatureConfig(OVERWORLD_MIST_ORES, 9));
+
     public static void registerConfiguredFeatures() {
         MistyFoglandsMod.LOGGER.info("Registering configured features for " + MistyFoglandsMod.MOD_ID);
     }

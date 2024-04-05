@@ -1,6 +1,8 @@
 package com.jacobhogrefe.world.dimension;
 
 import com.jacobhogrefe.MistyFoglandsMod;
+import com.jacobhogrefe.block.ModBlocks;
+import com.jacobhogrefe.item.ModItems;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
@@ -20,10 +22,10 @@ public class ModDimensions {
         MistyFoglandsMod.LOGGER.debug("Registering ModDimensions for " + MistyFoglandsMod.MOD_ID);
 
         CustomPortalBuilder.beginPortal()
-                .frameBlock(Blocks.MOSSY_COBBLESTONE)
+                .frameBlock(ModBlocks.MISTY_GRASS)
                 .destDimID(MF_DIMENSION_KEY.getValue())
                 .tintColor(37, 150, 190)
-                .lightWithItem(Items.FEATHER)
+                .lightWithItem(ModItems.MISTY_SHARD)
                 .onlyLightInOverworld()
                 .flatPortal()
                 .forcedSize(3, 3)

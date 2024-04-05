@@ -8,6 +8,6 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
     public static final ItemGroup MISTY_FOGLANDS = FabricItemGroupBuilder.build(
-            new Identifier(MistyFoglandsMod.MOD_ID, "custom_stick"), () -> new ItemStack(ModItems.CUSTOM_STICK)
+            new Identifier(MistyFoglandsMod.MOD_ID, "misty_shard"), () -> new ItemStack(ModItems.MISTY_SHARD)
     );
 }

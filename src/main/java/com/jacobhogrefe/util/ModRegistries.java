@@ -1,4 +1,4 @@
-package com.jacobhogrefe;
+package com.jacobhogrefe.util;
 
 import com.jacobhogrefe.block.ModBlocks;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
