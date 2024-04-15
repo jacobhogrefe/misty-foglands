@@ -22,7 +22,7 @@ public class ModDimensions {
         MistyFoglandsMod.LOGGER.debug("Registering ModDimensions for " + MistyFoglandsMod.MOD_ID);
 
         CustomPortalBuilder.beginPortal()
-                .frameBlock(ModBlocks.MISTY_GRASS)
+                .frameBlock(ModBlocks.MISTY_COBBLESTONE)
                 .destDimID(MF_DIMENSION_KEY.getValue())
                 .tintColor(37, 150, 190)
                 .lightWithItem(ModItems.MISTY_SHARD)

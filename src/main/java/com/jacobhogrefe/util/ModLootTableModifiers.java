@@ -22,7 +22,7 @@ public class ModLootTableModifiers {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(.35f)) // contains the item 35% of the time
-                        .with(ItemEntry.builder(ModBlocks.MISTY_GRASS))
+                        .with(ItemEntry.builder(ModBlocks.MISTY_COBBLESTONE))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0f, 4.0f)).build()); // contains 2 or 4
                 supplier.withPool(poolBuilder.build());
             }

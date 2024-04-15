@@ -1,16 +1,18 @@
 {
   "item.misty-foglands-mod.custom_stick": "Custom Stick",
   "item.misty-foglands-mod.misty_shard": "Misty Shard",
+  "item.misty-foglands-mod.hydro_blade": "Hydro Blade",
+  "item.misty-foglands-mod.spore_puff": "Spore Puff",
 
   "block.misty-foglands-mod.fogwood_leaves": "Fogwood Leaves",
   "block.misty-foglands-mod.fogwood_log": "Fogwood Log",
   "block.misty-foglands-mod.fogwood_planks": "Fogwood Planks",
-  "block.misty-foglands-mod.misty_grass": "Misty Grass",
   "block.misty-foglands-mod.stripped_fogwood_log": "Stripped Fogwood Log",
   "block.misty-foglands-mod.fogwood_sapling": "Fogwood Sapling",
   "block.misty-foglands-mod.mist_stone": "Mist Stone",
   "block.misty-foglands-mod.misty_cobblestone": "Misty Cobblestone",
   "block.misty-foglands-mod.mist_ore": "Mist Ore",
+  "block.misty-foglands-mod.dew_shroom": "Dew Shroom",
 
-  "itemGroup.misty-foglands-mod.custom_stick": "Misty Foglands"
+  "itemGroup.misty-foglands-mod.misty_shard": "Misty Foglands"
 }
