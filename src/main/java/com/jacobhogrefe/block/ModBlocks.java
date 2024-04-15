@@ -60,13 +60,6 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.STONE),
             UniformIntProvider.create(4, 9)),
             ModItemGroup.MISTY_FOGLANDS);
-    public static final Block DEW_SHROOM = registerBlock("dew_shroom",
-            new FlowerBlock(StatusEffects.WATER_BREATHING, 15,
-                    FabricBlockSettings.copy(Blocks.RED_MUSHROOM)
-                            .strength(4.0f)
-                            .nonOpaque()),
-            ModItemGroup.MISTY_FOGLANDS
-    );
 
     private static Item registerBlockItem(String name, Block block, ItemGroup group) {
         return Registry.register(Registry.ITEM, new Identifier(MistyFoglandsMod.MOD_ID, name),

@@ -6,11 +6,13 @@ import com.jacobhogrefe.item.custom.CustomStickItem;
 import com.jacobhogrefe.item.custom.HydroBladeItem;
 import com.jacobhogrefe.item.custom.SporePuffItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.lwjgl.system.CallbackI;
 
 public class ModItems {
 
@@ -22,6 +24,9 @@ public class ModItems {
             new HydroBladeItem(ModToolMaterials.HYDRO, 2, 4f, new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS)));
     public static final Item SPORE_PUFF = registerItem("spore_puff",
             new SporePuffItem(new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(16)));
+    public static final Item DEW_SHROOM = registerItem("dew_shroom",
+            new BlockItem(new Block(FabricBlockSettings.copy(Blocks.RED_MUSHROOM)), new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(64).food(ModFoodComponents.DEW_SHROOM)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(MistyFoglandsMod.MOD_ID, name), item);
     }
