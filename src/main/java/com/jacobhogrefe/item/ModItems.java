@@ -25,7 +25,11 @@ public class ModItems {
     public static final Item SPORE_PUFF = registerItem("spore_puff",
             new SporePuffItem(new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(16)));
     public static final Item DEW_SHROOM = registerItem("dew_shroom",
-            new BlockItem(new Block(FabricBlockSettings.copy(Blocks.RED_MUSHROOM)), new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(64).food(ModFoodComponents.DEW_SHROOM)));
+            new BlockItem(
+                    ModBlocks.DEW_SHROOM,
+                    new FabricItemSettings()
+                            .maxCount(64)
+                            .food(ModFoodComponents.DEW_SHROOM)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(MistyFoglandsMod.MOD_ID, name), item);
