@@ -1,4 +1,5 @@
 # Misty Foglands Mod
+
 ## What is this?
 This is a Minecraft mod I developed for my Open Source Development class, in which we are able to pick a project to work on throughout the semester that we are interested in. 
 
@@ -12,4 +13,14 @@ This mod adds a new dimension named "Misty Foglands" and is meant to be an endga
 This is a Fabric based 1.18.2 mod, so using the Fabric loader is necessary to ensure this mod works properly. Once the full version is released, I will update this section of the README.md file, in order to provide more clear description of how to play the mod, as well as where to get the JAR file for it.
 
 ## For future developers
-You're best resource will be this [playlist](https://www.youtube.com/watch?v=Xts41xvfjfs&list=PLKGarocXCE1ECgBI1_Z_Yr4qMdhjVi3kg&index=1&t=4s) which guides you through setting up the development environment, and adding new things to it. Once the development environment is set up, use `git clone https://github.com/jacobhogrefe/misty-foglands.git` to clone the project, instead of using the Fabric example mod as shown in the tutorial. From there using the other videos will guide you through adding more to the mod.
+You're best resource will be this [playlist](https://www.youtube.com/watch?v=Xts41xvfjfs&list=PLKGarocXCE1ECgBI1_Z_Yr4qMdhjVi3kg&index=1&t=4s) which guides you through setting up the development environment, and adding new things to it. The following steps are directly from the video, unless otherwise mentioned.
+
+1. Downloading JDK17
+2. Downloading IntelliJ IDEA
+3. [My Instruction] Run `git clone https://github.com/jacobhogrefe/misty-foglands.git` in the directory of your choosing.
+4. IMPORTANT STEP DO NOT SKIP
+5. CLicking the Reload Gradle Button
+6. Running the genSources task
+7. Starting Minecraft for the first time
+
+These will get the mod environment set up, and what you add next should be reflected in game.
