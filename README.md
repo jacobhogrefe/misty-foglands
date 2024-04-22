@@ -17,10 +17,11 @@ You're best resource will be this [playlist](https://www.youtube.com/watch?v=Xts
 
 1. Downloading JDK17
 2. Downloading IntelliJ IDEA
-3. [My Instruction] Run `git clone https://github.com/jacobhogrefe/misty-foglands.git` in the directory of your choosing.
-4. IMPORTANT STEP DO NOT SKIP
-5. CLicking the Reload Gradle Button
-6. Running the genSources task
-7. Starting Minecraft for the first time
+3. [My Instruction] Run `git clone https://github.com/jacobhogrefe/misty-foglands.git` in the directory of your choosing
+4. [My Instruction] Open the project in IntelliJ
+5. IMPORTANT STEP DO NOT SKIP
+6. CLicking the Reload Gradle Button
+7. Running the genSources task
+8. Starting Minecraft for the first time
 
 These will get the mod environment set up, and what you add next should be reflected in game.
