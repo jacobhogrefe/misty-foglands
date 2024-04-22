@@ -2,7 +2,6 @@ package com.jacobhogrefe;
 
 import com.jacobhogrefe.block.ModBlocks;
 import com.jacobhogrefe.item.ModItems;
-import com.jacobhogrefe.item.custom.SporePuffItem;
 import com.jacobhogrefe.item.entity.ModEntities;
 import com.jacobhogrefe.util.ModRegistries;
 import com.jacobhogrefe.world.dimension.ModDimensions;

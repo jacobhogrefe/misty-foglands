@@ -4,8 +4,6 @@ import com.jacobhogrefe.MistyFoglandsMod;
 import com.jacobhogrefe.block.ModBlocks;
 import com.jacobhogrefe.item.ModItems;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryKey;
