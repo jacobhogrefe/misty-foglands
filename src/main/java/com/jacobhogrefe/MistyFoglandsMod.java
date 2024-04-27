@@ -1,11 +1,14 @@
 package com.jacobhogrefe;
 
+import com.jacobhogrefe.block.ModBlockTags;
 import com.jacobhogrefe.block.ModBlocks;
 import com.jacobhogrefe.item.ModItems;
 import com.jacobhogrefe.item.entity.ModEntities;
 import com.jacobhogrefe.util.ModRegistries;
+import com.jacobhogrefe.world.ModBiomes;
 import com.jacobhogrefe.world.dimension.ModDimensions;
 import com.jacobhogrefe.world.feature.ModConfiguredFeatures;
+import com.jacobhogrefe.world.feature.ModPlacedFeatures;
 import com.jacobhogrefe.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -17,6 +20,8 @@ public class MistyFoglandsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlockTags.registerModBlockTags();
+		ModBiomes.registerModBiomes();
 		ModConfiguredFeatures.registerConfiguredFeatures();
 		ModItems.registerModItems();
 		ModDimensions.register();

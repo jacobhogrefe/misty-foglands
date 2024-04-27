@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "misty-foglands-mod:fogwood_logs"
+    }
+  ],
+  "result": {
+    "item": "misty-foglands-mod:fogwood_planks",
+    "count": 4
+  }
+}

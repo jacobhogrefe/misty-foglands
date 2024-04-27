@@ -17,6 +17,8 @@ public class ModItems {
             new CustomStickItem(new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(1)));
     public static final Item MISTY_SHARD = registerItem("misty_shard",
             new Item(new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(64)));
+    public static final Item HYDRO_FRAGMENT = registerItem("hydro_fragment",
+            new Item(new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS).maxCount(16)));
     public static final Item HYDRO_BLADE = registerItem("hydro_blade",
             new HydroBladeItem(ModToolMaterials.HYDRO, 2, 4f, new FabricItemSettings().group(ModItemGroup.MISTY_FOGLANDS)));
     public static final Item SPORE_PUFF = registerItem("spore_puff",

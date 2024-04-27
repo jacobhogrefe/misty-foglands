@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X",
+    "X#"
+  ],
+  "key": {
+    "#": {
+      "item": "misty-foglands-mod:misty_shard"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "misty-foglands-mod:hydro_fragment"
+  }
+}

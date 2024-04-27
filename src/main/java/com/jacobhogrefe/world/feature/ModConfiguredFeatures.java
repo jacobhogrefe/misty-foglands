@@ -1,7 +1,10 @@
 package com.jacobhogrefe.world.feature;
 
 import com.jacobhogrefe.MistyFoglandsMod;
+import com.jacobhogrefe.block.ModBlockTags;
 import com.jacobhogrefe.block.ModBlocks;
+import net.minecraft.structure.rule.TagMatchRuleTest;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
@@ -31,13 +34,14 @@ public class ModConfiguredFeatures {
                     new RandomFeatureConfig(List.of(new RandomFeatureEntry(FOGWOOD_CHECKED, 0.5f)),
                             FOGWOOD_CHECKED));
 
-    public static final List<OreFeatureConfig.Target> OVERWORLD_MIST_ORES = List.of(
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+    public static final List<OreFeatureConfig.Target> MIST_ORES = List.of(
+            OreFeatureConfig.createTarget(
+                    new TagMatchRuleTest(ModBlockTags.MIST_STONE_REPLACEABLES),
                     ModBlocks.MIST_ORE.getDefaultState()));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> MIST_ORE =
-            ConfiguredFeatures.register("misty_ore",Feature.ORE,
-                    new OreFeatureConfig(OVERWORLD_MIST_ORES, 9));
+            ConfiguredFeatures.register("mist_ore",Feature.ORE,
+                    new OreFeatureConfig(MIST_ORES, 9));
 
     public static void registerConfiguredFeatures() {
         MistyFoglandsMod.LOGGER.info("Registering configured features for " + MistyFoglandsMod.MOD_ID);
