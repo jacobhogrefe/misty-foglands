@@ -4,7 +4,7 @@
   "precipitation": "rain",
   "temperature_modifier": "none",
   "category": "swamp",
-  "creature_spawn_probability": 0.9,
+  "creature_spawn_probability": 0.99999999,
   "effects": {
     "sky_color": 3391201,
     "fog_color": 10856103,
@@ -18,6 +18,12 @@
       "tick_delay": 6000,
       "block_search_extent": 8,
       "offset": 2
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:dripping_water"
+      },
+      "probability": 0.007
     }
   },
   "spawners": {

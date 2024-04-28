@@ -12,11 +12,11 @@
           "parameters": {
             "continentalness": 0,
             "depth": 0,
-            "erosion": -0.5,
-            "humidity": 1,
+            "erosion": 0,
+            "humidity": 0,
             "offset": 0,
             "temperature": 0,
-            "weirdness": 1
+            "weirdness": 0
           }
         }
       ]
