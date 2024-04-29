@@ -116,5 +116,22 @@
       "minecraft:canyon"
     ]
   },
-  "features": []
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "misty-foglands-mod:mist_ore"
+    ],
+    [],
+    [],
+    [
+      "misty-foglands-mod:dew_shroom",
+      "misty-foglands-mod:fogwood"
+    ],
+    []
+  ]
 }

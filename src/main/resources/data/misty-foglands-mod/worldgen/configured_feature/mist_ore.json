@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:scattered_ore",
+  "config": {
+    "size": 3,
+    "discard_chance_on_air_exposure": 1,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "misty-foglands-mod:mist_stone_replaceable"
+        },
+        "state": {
+          "Name": "misty-foglands-mod:mist_ore"
+        }
+      }
+    ]
+  }
+}
