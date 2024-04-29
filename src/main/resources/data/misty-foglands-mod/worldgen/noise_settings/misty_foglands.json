@@ -1,7 +1,7 @@
 {
-  "sea_level": 100,
+  "sea_level": 101,
   "disable_mob_generation": true,
-  "aquifers_enabled": true,
+  "aquifers_enabled": false,
   "ore_veins_enabled": true,
   "legacy_random_source": false,
   "default_block": {
@@ -42,7 +42,7 @@
   },
   "noise_router": {
     "barrier": 0,
-    "fluid_level_floodedness": 1,
+    "fluid_level_floodedness": 0,
     "fluid_level_spread": 0,
     "lava": 0,
     "temperature": 0,
@@ -51,16 +51,7 @@
     "erosion": 0,
     "depth": 0,
     "ridges": 0,
-    "initial_density_without_jaggedness": {
-      "type": "minecraft:interpolated",
-      "argument": {
-        "type": "minecraft:y_clamped_gradient",
-        "from_y": 60,
-        "to_y": -64,
-        "from_value": 0,
-        "to_value": 1
-      }
-    },
+    "initial_density_without_jaggedness": 1,
     "final_density": {
       "type": "minecraft:add",
       "argument1": {

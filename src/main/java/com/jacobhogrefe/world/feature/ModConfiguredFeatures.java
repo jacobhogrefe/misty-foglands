@@ -43,6 +43,11 @@ public class ModConfiguredFeatures {
             ConfiguredFeatures.register("mist_ore",Feature.ORE,
                     new OreFeatureConfig(MIST_ORES, 9));
 
+    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> DEW_SHROOM =
+            ConfiguredFeatures.register("dew_shroom", Feature.FLOWER,
+                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.DEW_SHROOM)))));
+
     public static void registerConfiguredFeatures() {
         MistyFoglandsMod.LOGGER.info("Registering configured features for " + MistyFoglandsMod.MOD_ID);
     }
