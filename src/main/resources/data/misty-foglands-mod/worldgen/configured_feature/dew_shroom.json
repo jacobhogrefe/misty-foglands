@@ -11,7 +11,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "misty-foglands-mod:dew_shroom"
+              "Name": "misty-foglands-mod:dew_shroom_block"
             }
           }
         }

@@ -141,7 +141,7 @@
             "offset": 3,
             "surface_type": "floor",
             "add_surface_depth": true,
-            "secondary_depth_range": 10
+            "secondary_depth_range": 5
           },
           "then_run": {
             "type": "minecraft:block",

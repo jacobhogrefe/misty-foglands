@@ -21,5 +21,5 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-80), YOffset.aboveBottom(80))));
     public static final RegistryEntry<PlacedFeature> DEW_SHROOM_PLACED = PlacedFeatures.register("dew_shroom_placed",
             ModConfiguredFeatures.DEW_SHROOM, RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(),
-            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+                    PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 }
