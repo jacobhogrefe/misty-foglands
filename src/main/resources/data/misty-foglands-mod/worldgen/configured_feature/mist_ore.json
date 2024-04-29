@@ -7,7 +7,7 @@
       {
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "misty-foglands-mod:mist_stone_replaceable"
+          "tag": "misty-foglands-mod:base_stone_misty_foglands"
         },
         "state": {
           "Name": "misty-foglands-mod:mist_ore"

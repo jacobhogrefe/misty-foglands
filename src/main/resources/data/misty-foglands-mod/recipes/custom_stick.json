@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "misty-foglands-mod:hydro_blade"
+    }
+  },
+  "result": {
+    "item": "misty-foglands-mod:custom_stick"
+  }
+}
